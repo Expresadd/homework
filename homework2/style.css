@@ -1,0 +1,28 @@
+body {
+    background: #333;
+}
+.brown {
+    background: #3d2424;
+    color: #fff;
+}
+
+span {
+    color: #a9084e;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+}
+
+.purple {
+    width: 300px;
+    background: #930f8f;
+}
+
+.el{
+    background: #a9084e;
+    color: #fff;
+}
+
