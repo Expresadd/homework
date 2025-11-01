@@ -90,5 +90,6 @@ body {
     /* убрал перенос текста на новую строку */
     white-space: nowrap;
     /* text-decoration: dashed; */
-    text-decoration: dotted;
+    text-decoration: underline dotted ;
+
 }
