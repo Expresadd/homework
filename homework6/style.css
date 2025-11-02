@@ -1,0 +1,23 @@
+body {
+    font-size: 20px;
+}
+
+.parent {
+    background: #d3cae9;
+    border: 1px solid #000;
+    overflow: auto;
+    border-radius: 20px 0 0 20px;
+    height: 850px;
+}
+
+.child {
+    background: #d0bd8b;
+    display: inline-block;
+    margin: 20px;
+    box-sizing: border-box;
+    max-width: 300px;
+    min-width: 205px;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 8px 3px #333;
+}
