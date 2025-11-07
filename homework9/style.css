@@ -1,0 +1,29 @@
+* {
+    background: #333;
+}
+
+.text {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.perent {
+    background: #d9c7c7;
+    position: fixed;
+    left: 50%;
+    margin: 0 50px 100px 0;
+    min-height: 100px;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+}
+
+.child {
+    background: #c72b2b;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 15%;
+    border-radius: 50%;
+    position: absolute;
+}
