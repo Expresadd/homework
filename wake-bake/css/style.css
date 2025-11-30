@@ -1149,6 +1149,10 @@
     .contact {
         padding-bottom: 80px;
     }
+
+    .contact__inner {
+        gap: 0px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1193,4 +1197,5 @@
     .testimonials__slide {
         padding: 30px 10px 30px;
     }
+
 }
