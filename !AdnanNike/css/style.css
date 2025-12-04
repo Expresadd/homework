@@ -1,0 +1,187 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+/* ------------------------------ */
+
+.header__top {
+    padding: 48px 0 33.94px;
+    max-height: 105px;
+}
+
+.header__top-inner {
+    display: flex;
+    padding-left: 113px;
+    align-items: center;
+}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+
+}
+
+.nav__item {
+    position: relative;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.nav__item:first-child {
+    margin-right: 23px;
+}
+
+.nav__item:nth-child(2) {
+    margin-right: 37px;
+}
+
+.nav__item:nth-child(3) {
+    margin-right: 32px;
+}
+
+.nav__link {
+    display: block;
+    position: relative;
+}
+
+.nav__link:after {
+    background: none repeat scroll 0 0 transparent;
+    top: -42px;
+    content: "";
+    height: 8px;
+    left: 50%;
+    position: absolute;
+    background: var(--accent-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav__link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header__logo {
+    margin: 0 488px 0 230px;
+    max-width: 80px;
+    display: flex;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.nav__account {}
+
+.nav__account-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__account-item {}
+
+.nav__account-link {
+    width: 24px;
+    display: flex;
+    align-items: start;
+}
+
+.nav__account-link path {
+    width: 100%;
+}
+
+/* ----------------------------- */
+
+.header__bottom-inner {
+    background: url(../img/line-bg.png) 50% 0 no-repeat;
+    background-size: 105%;
+    display: flex;
+    gap: 90.93px;
+    padding-top: 234px;
+}
+
+.header__bottom-product {
+    margin-left: 193px;
+    max-width: 560px;
+    max-height: 308.11px;
+    transform: rotate(-15.54deg);
+}
+
+.header__bottom-product img {
+    width: 100%;
+}
+
+.header__bottom-info {
+    max-width: 492px;
+}
+
+.header__bottom-title {
+    font-family: "Futura Md BT";
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.header__bottom-flex {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 32px;
+}
+
+.header__bottom-price {
+    font-family: "Futura Hv BT";
+    font-weight: 900;
+    font-size: 36px;
+    margin-right: 164px;
+}
+
+.header__bottom-size {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.header__bottom-size span {
+    display: block;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.header__bottom-bag {}
+
+
+
+
+.button {
+    display: flex;
+    font-size: 12px;
+    padding: 18px 48px 16px;
+    border: 1px solid var(--general-text);
+    border-radius: 36px;
+    position: relative;
+    position: relative;
+    align-items: center;
+}
+
+.button path {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+
+
+
+
+/* ======================== */
+
+/* @media (max-height: 300px) {
+	.nav__list {
+		margin-top: 40px;
+	}
+} */
