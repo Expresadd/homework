@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Futura LtCn BT';
+    src: local('Futura LtCn BT Light'), local('FuturaBT-LightCondensed'),
+        url('../fonts/FuturaBT-LightCondensed.woff2') format('woff2'),
+        url('../fonts/FuturaBT-LightCondensed.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: local('Futura Bk BT Book'), local('FuturaBT-Book'),
+        url('../fonts/FuturaBT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura XBlkCnIt BT';
+    src: local('Futura Extra Black Condensed Italic BT'), local('FuturaBT-ExtraBlackCondItalic'),
+        url('../fonts/FuturaBT-ExtraBlackCondItalic.woff2') format('woff2'),
+        url('../fonts/FuturaBT-ExtraBlackCondItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: local('Futura Md BT Medium'), local('FuturaBT-Medium'),
+        url('../fonts/FuturaBT-Medium.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: local('Futura Md BT Bold'), local('FuturaBT-Bold'),
+        url('../fonts/FuturaBT-Bold.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: local('Futura Heavy BT'), local('FuturaBT-Heavy'),
+        url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: local('Futura Md BT Medium Italic'), local('FuturaBT-MediumItalic'),
+        url('../fonts/FuturaBT-MediumItalic.woff2') format('woff2'),
+        url('../fonts/FuturaBT-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: local('Futura Md BT Bold Italic'), local('FuturaBT-BoldItalic'),
+        url('../fonts/FuturaBT-BoldItalic.woff2') format('woff2'),
+        url('../fonts/FuturaBT-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

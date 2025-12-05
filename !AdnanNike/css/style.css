@@ -1,0 +1,402 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+/* ------------------------------ */
+
+.header__top {
+    padding: 48px 0 33.94px;
+    max-height: 105px;
+}
+
+.header__top-inner {
+    display: flex;
+    padding-left: 113px;
+    align-items: center;
+}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+
+}
+
+.nav__item {
+    position: relative;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.nav__item:first-child {
+    margin-right: 23px;
+}
+
+.nav__item:nth-child(2) {
+    margin-right: 37px;
+}
+
+.nav__item:nth-child(3) {
+    margin-right: 32px;
+}
+
+.nav__link {
+    display: block;
+    position: relative;
+}
+
+.nav__link:after {
+    background: none repeat scroll 0 0 transparent;
+    top: -42px;
+    content: "";
+    height: 8px;
+    left: 50%;
+    position: absolute;
+    background: var(--accent-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav__link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header__logo {
+    margin: 0 488px 0 230px;
+    max-width: 80px;
+    display: flex;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.nav__account {}
+
+.nav__account-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__account-item {}
+
+.nav__account-link {
+    width: 24px;
+    display: flex;
+    align-items: start;
+}
+
+.nav__account-link path {
+    width: 100%;
+}
+
+.nav__account-link path {
+    transition: var(--transition);
+}
+
+.nav__account-link:hover path {
+    fill: var(--accent-color);
+}
+
+
+
+/* ----------------------------- */
+
+.header__bottom-inner {
+    background: url(../img/line-bg.png) 50% 0 no-repeat;
+    background-size: 105%;
+    display: flex;
+    gap: 90.93px;
+    padding: 211px 0 173px;
+}
+
+
+
+.header__bottom-product {
+    margin-left: 193px;
+    max-width: 560px;
+    max-height: 308.11px;
+    transform: rotate(-15.54deg);
+    position: relative;
+}
+
+.header__bottom-product img {
+    width: 100%;
+}
+
+.header__bottom-product::before {
+    position: absolute;
+    /* background: url(../img/add.svg); */
+    content: '';
+    color: #1b3559;
+    width: 56px;
+    height: 56px;
+    top: 93px;
+    left: 198px;
+    background: var(--general-text);
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px #1b3559;
+    transform: rotate(15deg);
+}
+
+.header__bottom-product::after {
+    position: absolute;
+    /* background: url(../img/add.svg); */
+    content: '';
+    width: 56px;
+    height: 56px;
+    bottom: -13px;
+    right: 26px;
+    background: var(--general-text);
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px #1b3559;
+    transform: rotate(15deg);
+}
+
+
+
+.header__bottom-info {
+    max-width: 492px;
+}
+
+.header__bottom-title {
+    font-family: "Futura Md BT";
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.header__bottom-flex {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 32px;
+}
+
+.header__bottom-price {
+    font-family: "Futura Hv BT";
+    font-weight: 900;
+    font-size: 36px;
+    margin-right: 117px;
+}
+
+.header__bottom-size {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.header__bottom-bag {
+    display: flex;
+    align-items: anchor-center;
+}
+
+/* .header__bottom-size span {
+    display: block;
+    font-weight: 900;
+    font-size: 36px;
+} */
+
+.header__bottom-select {}
+
+/* ====================== */
+
+.format {
+    background: var(--general-bg);
+    flex: 1;
+    color: var(--general-text);
+    cursor: pointer;
+    font-size: 36px;
+    font-family: "Futura Hv BT";
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 70px;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--general-bg);
+    cursor: pointer;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.select:hover::after {
+    color: var(--accent-color);
+}
+
+.header__models {}
+
+.header__models-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, .5fr);
+    /* grid-template-rows: repeat(2, auto); */
+    /* justify-items: start */
+}
+
+.header__models-slide {}
+
+.header__models-shoes {
+    max-width: 320px;
+    min-height: 195px;
+    border: 2px solid var(--general-text);
+    position: relative;
+}
+
+.header__models-img {
+    position: absolute;
+    max-width: 229px;
+    max-height: 134.28px;
+    display: flex;
+    margin: auto auto;
+    /* top: -50px; */
+}
+
+.one {
+    top: -41px;
+    left: 15.25px;
+}
+
+.two {
+    top: -9px;
+    left: 15.25px;
+}
+
+.three {
+    top: -25px;
+    left: 15.25px;
+}
+
+
+.header__models-img img {
+    width: 100%;
+
+}
+
+.header__models-text {
+    display: block;
+    min-width: 150px;
+    font-family: "Futura LtCn BT";
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 134px 148px 61px 32px;
+    white-space: nowrap
+}
+
+
+.header__labels {
+    width: 100%;
+    clip-path: inset(0 0 10% 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.header__labels img {
+    /* width: 100%; */
+}
+
+
+
+/* ====================== */
+
+
+
+
+
+.header__bottom-bag {}
+
+
+
+
+.button {
+    display: flex;
+    font-size: 12px;
+    padding: 18px 48px 16px;
+    border: 1px solid var(--general-text);
+    border-radius: 36px;
+    position: relative;
+    position: relative;
+    align-items: center;
+}
+
+.button path {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+/* ---------------------------- */
+
+
+
+
+
+
+.handcraft__inner {
+    margin-top: 170.32px;
+}
+
+.handcraft__title {
+    font-family: "Futura Md BT";
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 156%;
+    text-align: center;
+    position: relative;
+}
+
+.handcraft__title span {
+    background: linear-gradient(11deg,
+    #ffffff 63%, 
+    #ba0000 64%);
+    background-clip: text;
+    color: transparent;
+}
+
+.handcraft__text {
+    margin-top: 80px;
+}
+
+.handcraft__button {}
+
+.button {}
+
+.handcraft__img {}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== */
+
+/* @media (max-height: 300px) {
+	.nav__list {
+		margin-top: 40px;
+	}
+} */
