@@ -1,0 +1,153 @@
+.footer__top-inner {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 137px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer__top-block {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer__top-title {
+    font-family: "Futura Hv BT";
+    margin-bottom: 8px;
+}
+
+.footer__top-text {
+    text-transform: capitalize;
+}
+
+/* ---------------------- */
+
+.footer__bottom-inner {
+    display: flex;
+    justify-content: center;
+    gap: 193px;
+    margin-bottom: 111px;
+}
+
+.footer__bottom-title {
+    font-family: "Futura Md BT";
+    font-weight: 600;
+    font-size: 48px;
+    /* max-width: 454px; */
+    line-height: 133%;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+
+.contact__label {
+    display: block;
+    margin-bottom: 88px;
+}
+
+.field {
+    position: relative;
+    display: block;
+    max-width: 399px;
+}
+
+.field span {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    font-size: 11px;
+    color: var(--general-text);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.field__input {
+    display: block;
+    width: 100%;
+    color: var(--general-text);
+    background: #00000000;
+    border: 1px solid var(--general-text);
+    border-radius: 100px;
+    padding: 16px 83px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.field__input:hover {
+    border-color: var(--accent-color);
+}
+
+.field__input::placeholder {
+    transition: var(--transition);
+}
+
+.field__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+.field__input-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-family: "Futura Bk BT";
+    padding: 16px 40px;
+    border-radius: 100px;
+    line-height: 150%;
+    color: var(--general-bg);
+
+    transition: var(--transition);
+}
+
+.field__input-button:hover {
+    background: var(--accent-color);
+}
+
+.footer__bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 51px 61px;
+}
+
+.footer__grid-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__grid-info:nth-child(3) {
+    grid-row: 1 / -1;
+    grid-column: 3 / 4;
+}
+
+.footer__grid-title {
+    font-family: "Futura XBlkCnIt BT";
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+h4.footer__grid-title {
+    margin-bottom: -2px;
+}
+
+.footer__grid-text {
+    font-family: "Futura LtCn BT";
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.footer__socials-inner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer__socials-copy {
+    display: flex;
+    gap: 8px;
+    margin-right: 828px;
+}
