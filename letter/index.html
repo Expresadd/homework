@@ -1,0 +1,115 @@
+!<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Письмо Деду Морозу</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-gift"></i> Письмо Деду Морозу</h1>
+            <p>Расскажи о своих добрых делах и заветных желаниях</p>
+            <div class="snowflakes" id="snowflakes"></div>
+        </div>
+        
+        <div class="content">
+            <div class="letter-section">
+                <div class="letter">
+                    <div class="santa-icon santa-icon-1">
+                        <i class="fas fa-sleigh"></i>
+                    </div>
+                    <div class="letter-header">
+                        <h2>Дорогой Дедушка Мороз!</h2>
+                    </div>
+                    <div class="letter-body">
+                        <p>Здравствуй, Дедушка Мороз! Меня зовут <span id="name-placeholder">[Ваше имя]</span>, мне <span id="age-placeholder">[Ваш возраст]</span> лет. В этом году я старался(-ась) хорошо себя вести, помогать родителям и хорошо учиться.</p>
+                        <p>Больше всего в этом году я хочу <span id="wish-placeholder">[ваше заветное желание]</span>. Это бы сделало мой Новый год по-настоящему волшебным!</p>
+                        <p>Я обещаю и дальше быть добрым(-ой), послушным(-ой) и помогать другим. Спасибо тебе за все чудеса, которые ты даришь детям каждый год!</p>
+                    </div>
+                    <div class="signature">
+                        <p>С уважением и любовью,</p>
+                        <p id="signature-placeholder">[Ваше имя]</p>
+                    </div>
+                    <div class="santa-icon santa-icon-2">
+                        <i class="fas fa-sleigh"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2 style="color: #0c2461; margin-bottom: 25px; text-align: center;">Заполни письмо</h2>
+                <form id="letter-form">
+                    <div class="form-group">
+                        <label for="name">Твоё имя:</label>
+                        <input type="text" id="name" placeholder="Например: Маша или Петя" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Сколько тебе лет:</label>
+                        <input type="number" id="age" min="1" max="120" placeholder="Например: 8" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">Откуда ты пишешь:</label>
+                        <input type="text" id="city" placeholder="Город, деревня" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="behavior">Как ты себя вел(а) в этом году:</label>
+                        <select id="behavior" required>
+                            <option value="">Выбери оценку</option>
+                            <option value="excellent">Очень хорошо, помогал(а) родителям</option>
+                            <option value="good">Хорошо, иногда шалил(а)</option>
+                            <option value="average">Бывало по-разному</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wish">Твоё заветное желание:</label>
+                        <textarea id="wish" placeholder="Опиши, что бы ты хотел(а) получить в подарок на Новый год..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Дополнительные пожелания:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="snow">
+                            <label for="snow" style="display: inline; font-weight: normal;">Много снега на Новый год</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="health">
+                            <label for="health" style="display: inline; font-weight: normal;">Здоровья родным и близким</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="peace">
+                            <label for="peace" style="display: inline; font-weight: normal;">Мира во всём мире</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Отправить письмо Деду Морозу
+                    </button>
+                </form>
+                
+                <div class="confirmation" id="confirmation">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Письмо отправлено!</h3>
+                    <p>Дорогой, <span id="confirmation-name"></span>, твоё письмо успешно отправлено Деду Морозу в Великий Устюг!</p>
+                    <p>Он обязательно прочитает его перед Новым годом. Не забывай хорошо себя вести!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Волшебная почта Деда Мороза • Великий Устюг • © 2026</p>
+            <p>Письма доставляются волшебными снежинками</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
