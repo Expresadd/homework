@@ -1,0 +1,74 @@
+:root {
+    --general-bg: #000;
+    --general-text: #fff;
+    --accent-color: #ba0000;
+    --transition: all .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+}
+
+body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+
+.body {
+    font-family: "Futura Bk BT", "Arial", sans-serif;
+    /* line-height: 100%; */
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+main {
+    background: url(../img/main-bg-lines.png) 68% -80% / auto 80% no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+.button {
+    display: inline-flex;
+    font-size: 16px;
+    border: 1px solid var(--general-text);
+    border-radius: 36px;
+    height: 36px;
+    padding: 3px 16px;
+    align-items: center;
+    gap: 11.73px;
+    flex-wrap: wrap;
+    transition: var(--transition);
+}
+
+.button path {
+    transition: var(--transition);
+}
+
+.button:hover {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.button:hover path {
+    fill: var(--accent-color);
+}
+
+/* ------------------------------- */
