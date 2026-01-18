@@ -15,9 +15,14 @@ console.log(""); // отступ между задачами
 const num = +prompt("Введите число.");
 let factorial = 1;
 
+if (isNaN(num)) {
+    (alert("Нужно ввести число!"));
+}
+
 for (i = factorial; i <= num; i++) {
     factorial = factorial * i;
 }
+
 console.log(`Факториал ${num} равен ${factorial}.`);
 
 // *Задача 3.
