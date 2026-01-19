@@ -16,30 +16,29 @@ const num = +prompt("Введите число.");
 let factorial = 1;
 
 if (isNaN(num)) {
-    (alert("Нужно ввести число!"));
+(alert("Нужно ввести число!"));
 }
 
-for (i = factorial; i <= num; i++) {
-    factorial = factorial * i;
+for (i = 1; i <= num; i++) {
+factorial = factorial * i;
 }
 
 console.log(`Факториал ${num} равен ${factorial}.`);
 
+
 // *Задача 3.
 // Выведите в консоль шахматную доску размером 8x8, где символы чередуются (например, # и пробел). Начинайте с # в первой ячейке первой строки.
 
-// let board = "";
-// let row = ""
+const boardSize = 8;
+let board = "";
 
-// for (let i = 1; i <= 8; i += 2) {
-//     board += "#" + " ";
-//     console.log(board);
-    // for (let j = 2; j <= 8; j += 2) {
-        // row += "Ч ";
-        // row += i + "x"
-        // console.log(row);
-    // }
-    // board += "\n";
-// }
+for (let i = 1; i <= boardSize; i++) {
+    let row = "";
+    for (let j = 1; j <= boardSize; j++) {
+        // row = row + (j % 2 === 0? "Ч " : "Б ");
+        row += (i + j) % 2 === 0? "# " : "  ";
+    }
+    board = board + row + "\n";
+}
 
-// console.log(board, row);
+console.log(board);
