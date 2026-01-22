@@ -100,10 +100,15 @@ console.log(""); // отступ между задачами
 // console.log(findFirstEven(9, 9)); // "Чётных чисел нет"
 
 const findFirstEven = (start, end) => {
+
     if (start > end) return "Некорректный диапазон";
+
+    let numbers = 0;
+
     for (let i = start; i <= end; i++) {
         if (i % 2 === 0) {
-            return i;
+            numbers += i;
+            return numbers;
         }
         if (start === end && i % 2 !== 0) {
             return "Чётных чисел нет";
