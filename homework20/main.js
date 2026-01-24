@@ -28,17 +28,12 @@ const object1 = {
 
 const isEmpty = (object1) => {
     for (const key in object1) {
-        switch (true) {
-            case (typeof (key) == "string"):
-                return true;
-            default:
-                return false;
-        }
+        return false;
     }
+    return true;
 }
 
 console.log(isEmpty(object1));
-
 
 // Задача 3.
 // Создайте объект task с несколькими свойствами: title, description, isCompleted.
@@ -50,23 +45,36 @@ console.log(`
     `);
 
 const task = {
-    title: "123",
-    description: "456",
-    isCompleted: true,
+    title: "Купить продукты",
+    description: "Купить молоко и хлеб",
+    isCompleted: false,
 }
 
-let object;
-
-const cloneAndModify = (object, modifications) => {
-    modifications = { title: "modifications", name: "task copy", };
-    object = { ...task, ...modifications };
-    for (let key in object) {
-        console.log(`${key}:`, object[key]);
-    }
-    return object;
+function cloneAndModify(obj, modifications) {
+    return { ...obj, ...modifications };
 }
 
-cloneAndModify();
+task.title = "Сходить в магазин";
+
+const newTask = cloneAndModify(task, modifications = { title: "Продукты купили", isCompleted: true, });
+for (let key in newTask) {
+    console.log(`${key}:`, newTask[key]);
+}
+
+// console.log(newTask);
+
+// let object;
+
+// function cloneAndModify (object, modifications) {
+//     modifications = { title: "Продукты купили", isCompleted: true, };
+//     object = { ...task, ...modifications };
+//     for (let key in object) {
+//         console.log(`${key}:`, object[key]);
+//     }
+//     return object;
+// }
+
+// cloneAndModify();
 
 // Задача 4.
 // Создайте функцию callAllMethods, которая принимает объект и вызывает все его методы.
@@ -99,7 +107,7 @@ const myObject = {
 
 const callAllMethods = (object) => {
     for (let method in object) {
-        if (typeof (object[method]) == "function") {
+        if (typeof (object[method]) === "function") {
             object[method]();
         }
     }
