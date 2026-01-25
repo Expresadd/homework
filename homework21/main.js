@@ -80,7 +80,7 @@ const newArray = ["Alex", "Bob", "John", "Michel", "Max"];
 
 function first(arr, n) {
     for (let i = 0; i < n; i++) {
-        if (n === n && n <= arr.length) {
+        if (n === n && n <= arr.length && n > 0) {
             console.log(newArray[i]);
         }
     }
@@ -89,13 +89,14 @@ function first(arr, n) {
     } else if (n === "undefined" || n == isNaN) {
         return arr[0];
     } else if (n > arr.length) {
-        console.error("Вы ввели число больше, чем элементов в данном массиве.")
+        console.error("Вы ввели число больше, чем элементов в данном массиве.");
         return;
-    }
+    } 
+
     // else {
     //     return arr[0];
     // }
 
 }
 
-console.log(first(newArray, 2));
+console.log(first(newArray, 1));
