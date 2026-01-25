@@ -99,4 +99,4 @@ function first(arr, n) {
 
 }
 
-console.log(first(newArray, 1));
+console.log(first(newArray, 4));
