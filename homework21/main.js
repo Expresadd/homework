@@ -92,7 +92,10 @@ function first(arr, n) {
         console.error("Вы ввели число больше, чем элементов в данном массиве.")
         return;
     }
+    // else {
+    //     return arr[0];
+    // }
 
 }
 
-console.log(first(newArray, 4));
+console.log(first(newArray, 2));
